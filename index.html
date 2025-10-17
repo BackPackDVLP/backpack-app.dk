@@ -9,7 +9,7 @@
   <!-- Page Title -->
   <title>BackPack</title>
 
-    <!-- Favicon -->
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/img/icon.png">
 
   <!-- Compressed Styles -->
@@ -213,105 +213,108 @@
 
   <!-- Panel Top #05 -->
   <!-- Panel Top #05 -->
-<nav class="panel top">
-  <div class="sections desktop">
-    <div class="left">
-      <a href="#" title="BackPack">
-        <img src="assets/img/logo.png" alt="BackPack Logo" width="180" height="auto">
-      </a>
+  <nav class="panel top">
+    <div class="sections desktop">
+      <div class="left">
+        <a href="#" title="BackPack">
+          <img src="assets/img/logo.png" alt="BackPack Logo" width="180" height="auto">
+        </a>
+      </div>
+
+      <div class="center">
+        <ul class="menu">
+          <li><a href="#">Hjem</a></li>
+          <li><a href="#videos">Funktioner</a></li>
+          <li><a href="#features">Om BackPack</a></li>
+          <li><a href="#contact">Kontakt os</a></li>
+          <li><a href="#download">Download</a></li>
+        </ul>
+      </div>
+
+      <div class="right">
+        <a class="cool-button" href="https://backpack-ba3ca.web.app/#" target="_blank">
+          Kontrolpanel
+        </a>
+      </div>
     </div>
 
-    <div class="center">
-      <ul class="menu">
-        <li><a href="#">Hjem</a></li>
-        <li><a href="#videos">Funktioner</a></li>
-        <li><a href="#features">Om BackPack</a></li>
-        <li><a href="#contact">Kontakt os</a></li>
-        <li><a href="#download">Download</a></li>
-      </ul>
+    <div class="sections compact hidden">
+      <div class="left">
+        <a href="#" title="BackPack">
+          <img src="assets/img/logo.png" alt="BackPack Logo" width="180" height="auto">
+        </a>
+      </div>
+      <div class="right">
+        <span class="button actionButton sidebarTrigger" data-sidebar-id="1">
+          <svg>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use>
+          </svg>
+        </span>
+      </div>
     </div>
+  </nav>
 
-    <div class="right">
-      <a class="cool-button" href="https://backpack-ba3ca.web.app/#/group-selection" target="_blank">
-        Kontrolpanel
-      </a>
-    </div>
-  </div>
+  <style>
+    .sections.desktop {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      /* left logo, center menu, right button */
+    }
 
-  <div class="sections compact hidden">
-    <div class="left">
-      <a href="#" title="BackPack">
-        <img src="assets/img/logo.png" alt="BackPack Logo" width="180" height="auto">
-      </a>
-    </div>
-    <div class="right">
-      <span class="button actionButton sidebarTrigger" data-sidebar-id="1">
-        <svg>
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use>
-        </svg>
-      </span>
-    </div>
-  </div>
-</nav>
+    .center {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      /* centers menu horizontally */
+    }
 
-<style>
-.sections.desktop {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* left logo, center menu, right button */
-}
+    .menu {
+      display: flex;
+      gap: 30px;
+      /* space between menu items */
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
 
-.center {
-  flex: 1;
-  display: flex;
-  justify-content: center; /* centers menu horizontally */
-}
+    .menu li a {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
 
-.menu {
-  display: flex;
-  gap: 30px; /* space between menu items */
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+    .menu li a:hover {
+      color: #ffffff;
+    }
 
-.menu li a {
-  font-size: 18px;
-  font-weight: 700;
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
+    .cool-button {
+      display: inline-block;
+      padding: 10px 25px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #00c853, #64dd17);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease;
+    }
 
-.menu li a:hover {
-  color: #ffffff;
-}
+    .cool-button:hover {
+      background: linear-gradient(135deg, #64dd17, #00c853);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    }
 
-.cool-button {
-  display: inline-block;
-  padding: 10px 25px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #00c853, #64dd17);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease;
-}
-
-.cool-button:hover {
-  background: linear-gradient(135deg, #64dd17, #00c853);
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-}
-
-.cool-button:active {
-  transform: translateY(0);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-}
-</style>
+    .cool-button:active {
+      transform: translateY(0);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+  </style>
 
 
   <!-- Sidebar -->
@@ -356,10 +359,10 @@
                 </p>
 
               <li class="col-6-12" style="overflow: visible;">
-  <div style="transform: scale(1.4); transform-origin: center;">
-    <img class="ae-4" width="1000" src="assets/img/appexample.png" alt="BackPack app preview" />
-  </div>
-</li>
+                <div style="transform: scale(1.4); transform-origin: center;">
+                  <img class="ae-4" width="1000" src="assets/img/appexample.png" alt="BackPack app preview" />
+                </div>
+              </li>
             </ul>
           </div>
 
@@ -371,53 +374,72 @@
 
 
   <!-- Slide 2 (#60) -->
-  <section class="slide fade-6 kenBurns" data-name="videos">
-    <div class="content">
-      <div class="container">
-        <div class="wrap">
-          <div class="fix-12-12">
-            <ul class="grid">
+  <section class="slide fade-6 kenBurns" data-name="videos" style="height: 100vh; overflow: hidden;">
+    <div class="content"
+      style="height: 100%; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; overflow: hidden;">
+      <div class="container"
+        style="height: 100%; width: 100%; display: flex; justify-content: center; align-items: center;">
+        <div class="wrap" style="height: 100%; width: 100%;">
+          <div class="fix-12-12" style="height: 100%;">
+            <ul class="grid" style="display: flex; flex-wrap: wrap; height: 100%; gap: 20px; box-sizing: border-box;">
+
               <!-- Text and Tabs -->
-              <li class="col-6-12 left">
+              <li class="col-6-12 left"
+                style="flex: 1 1 45%; max-height: 100%; display: flex; flex-direction: column; justify-content: center; overflow: hidden;">
                 <h1 class="ae-2 fromLeft">BackPack</h1>
 
                 <!-- Tabs -->
                 <ul class="tabs controller uppercase bold ae-4 fromCenter" data-slider-id="60-1">
-                  <li class="selected">Den komplette oversigt</li>
-                  <li>SOS-funktioner</li>
-                  <li>Huskelisten</li>
-                  <li>Gruppeoversigten</li>
-                  <li>Samling</li>
+                  <li class="selected" data-slide-index="0">Den komplette oversigt</li>
+                  <li data-slide-index="1">SOS-funktioner</li>
+                  <li data-slide-index="2">Huskelisten</li>
+                  <li data-slide-index="3">Gruppeoversigten</li>
+                  <li data-slide-index="4">Samling</li>
                 </ul>
               </li>
 
               <!-- Image Slider controlled by tabs -->
-              <li class="col-6-12 left ae-5 fromCenter">
-                <ul class="slider animated margin-top-4" data-slider-id="60-1">
-                  <li class="selected fromCenter">
+              <li class="col-6-12 left ae-5 fromCenter"
+                style="flex: 1 1 50%; display: flex; justify-content: center; align-items: center; overflow: hidden; position: relative;">
 
-                    <img class="wide shadow rounded" src="assets/img/Hjem.png" alt="Den komplette oversigt"
-                      style="transform:scale(0.9);" />
-                  </li>
-                  <li class="fromAbove">
+                <ul class="slider animated margin-top-4" data-slider-id="60-1"
+                  style="width: 100%; height: 100%; list-style:none; padding:0; margin:0; position:relative;">
 
-                    <div style="display:flex; justify-content:center; align-items:center; overflow:hidden;">
-                      <img class="wide shadow rounded" src="assets/img/SOS.png" alt="SOS-funktioner"
-                        style="transform:scale(0.9); " />
-                    </div>
+                  <!-- Slide 1 -->
+                  <li class="selected"
+                    style="position:absolute; top:0; left:0; width:100%; height:100%; display:flex; justify-content:center; align-items:center;">
+                    <img src="assets/img/Hjem.png" alt="Den komplette oversigt"
+                      style="max-width:100%; max-height:80vh; object-fit:contain;">
                   </li>
-                  <li class="fromCenter">
-                    <img class="wide shadow rounded" src="assets/img/Huskeliste.png" alt="Huskelisten"
-                      style="transform:scale(0.9); " />
+
+                  <!-- Slide 2 -->
+                  <li
+                    style="position:absolute; top:0; left:0; width:100%; height:100%; display:flex; justify-content:center; align-items:center;">
+                    <img src="assets/img/SOS.png" alt="SOS-funktioner"
+                      style="max-width:100%; max-height:80vh; object-fit:contain;">
                   </li>
-                  <li class="fromCenter">
-                    <img class="wide shadow rounded" src="assets/img/Gruppeoversigt.png" alt="Gruppeoversigten"
-                      style="transform:scale(0.9); " />
+
+                  <!-- Slide 3 -->
+                  <li
+                    style="position:absolute; top:0; left:0; width:100%; height:100%; display:flex; justify-content:center; align-items:center;">
+                    <img src="assets/img/Huskeliste.png" alt="Huskelisten"
+                      style="max-width:100%; max-height:80vh; object-fit:contain;">
                   </li>
-                  <li class="fromCenter">
-                    <img class="wide shadow rounded" src="assets/img/Samling.png" alt="Samling"
-                      style="transform:scale(0.9); " />
+
+                  <!-- Slide 4 -->
+                  <li
+                    style="position:absolute; top:0; left:0; width:100%; height:100%; display:flex; justify-content:center; align-items:center;">
+                    <img src="assets/img/Gruppeoversigt.png" alt="Gruppeoversigten"
+                      style="max-width:100%; max-height:80vh; object-fit:contain;">
                   </li>
+
+                  <!-- Slide 5 -->
+                  <li
+                    style="position:absolute; top:0; left:0; width:100%; height:100%; display:flex; justify-content:center; align-items:center;">
+                    <img src="assets/img/Samling.png" alt="Samling"
+                      style="max-width:100%; max-height:80vh; object-fit:contain;">
+                  </li>
+
                 </ul>
               </li>
             </ul>
@@ -425,8 +447,30 @@
         </div>
       </div>
     </div>
-    <div class="background" style="background-image:url(assets/img/background/2.jpg)"></div>
+    <div class="background" style="background-image:url(assets/img/background/2.jpg); height: 100%;"></div>
   </section>
+
+  <style>
+    @media (max-width: 900px) {
+      section.slide[data-name="videos"] .grid {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      section.slide[data-name="videos"] .grid>li.col-6-12 {
+        flex: 1 1 100%;
+        max-height: 50vh;
+        /* prevents overflow on small screens */
+        margin-bottom: 20px;
+      }
+
+      section.slide[data-name="videos"] .slider li img {
+        max-height: 40vh;
+      }
+    }
+  </style>
+
 
 
 
@@ -550,31 +594,165 @@
     <div class="background" style="background-image:url(assets/img/background/5.jpg)"></div>
   </section>
 
-<!-- Panel Bottom #01 -->
-<nav class="panel bottom forceMobileView">
-  <div class="sections desktop" style="display: flex; justify-content: space-between; align-items: center;">
-    <div class="left">
-      <span class="bottom-info">
-        CVR: 45283755 | Email: info@backpack-app.dk
-      </span>
-    </div>
-   
-  </div>
-</nav>
+  <!-- Panel Bottom #01 -->
+  <nav class="panel bottom forceMobileView">
+    <div class="sections desktop" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="left">
+        <span class="bottom-info">
+          CVR: 45283755 | Email: info@backpack-app.dk
+        </span>
+      </div>
 
-<style>
-.bottom-info {
-  font-size: 13px;       /* meget småt */
-  color: #ccc;           /* lys grå for diskret look */
-  font-weight: 400;
-}
-</style>
+    </div>
+  </nav>
+
+  <style>
+    .bottom-info {
+      font-size: 13px;
+      /* meget småt */
+      color: #ccc;
+      /* lys grå for diskret look */
+      font-weight: 400;
+    }
+  </style>
 
   <!-- Share Window -->
 
 
   <!-- Loading Progress Bar -->
   <div class="progress-bar blue"></div>
+
+  <script>
+    // ===== Smooth Scrolling for menu links =====
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) {
+          window.scrollTo({
+            top: target.offsetTop - 80, // adjust offset for fixed top nav
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // ===== Sidebar toggle =====
+    const sidebarTriggers = document.querySelectorAll('.sidebarTrigger');
+    sidebarTriggers.forEach(btn => {
+      const sidebarId = btn.dataset.sidebarId;
+      const sidebar = document.querySelector(`.sidebar[data-sidebar-id="${sidebarId}"]`);
+      btn.addEventListener('click', () => {
+        sidebar.classList.toggle('active');
+      });
+    });
+
+    const sidebarCloses = document.querySelectorAll('.sidebar .close');
+    sidebarCloses.forEach(closeBtn => {
+      closeBtn.addEventListener('click', () => {
+        closeBtn.closest('.sidebar').classList.remove('active');
+      });
+    });
+
+    // ===== Tab-controlled slider for Slide 2 =====
+    const tabControllers = document.querySelectorAll('.tabs.controller');
+    tabControllers.forEach(controller => {
+      const tabs = controller.querySelectorAll('li');
+      const sliderId = controller.dataset.sliderId;
+      const slider = document.querySelector(`.slider[data-slider-id="${sliderId}"]`);
+      const slides = slider.querySelectorAll('li');
+
+      tabs.forEach((tab, i) => {
+        tab.addEventListener('click', () => {
+          // Remove selected class from all tabs
+          tabs.forEach(t => t.classList.remove('selected'));
+          tab.classList.add('selected');
+
+          // Show corresponding slide
+          slides.forEach(s => s.classList.remove('selected'));
+          if (slides[i]) slides[i].classList.add('selected');
+        });
+      });
+    });
+
+    // ===== Sticky top nav on scroll =====
+    const topNav = document.querySelector('nav.panel.top');
+    const navOffset = topNav.offsetTop;
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > navOffset) {
+        topNav.classList.add('sticky');
+      } else {
+        topNav.classList.remove('sticky');
+      }
+
+      // Highlight menu items while scrolling
+      document.querySelectorAll('section.slide').forEach(sec => {
+        const id = sec.dataset.name;
+        const link = document.querySelector(`.menu li a[href="#${id}"]`);
+        if (!link) return;
+        const offset = sec.offsetTop - 100;
+        const height = sec.offsetHeight;
+        if (window.pageYOffset >= offset && window.pageYOffset < offset + height) {
+          document.querySelectorAll('.menu li a').forEach(l => l.classList.remove('active'));
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+
+  <style>
+    /* ===== Sticky Nav ===== */
+    nav.panel.top.sticky {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+      background-color: rgba(0, 0, 0, 0.85);
+      transition: background 0.3s;
+    }
+
+    /* ===== Sidebar active ===== */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 280px;
+      height: 100%;
+      background: #111;
+      color: #fff;
+      z-index: 1000;
+      overflow-y: auto;
+      transition: right 0.35s ease;
+    }
+
+    .sidebar.active {
+      right: 0;
+    }
+
+    .sidebar .close {
+      cursor: pointer;
+      padding: 15px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    /* ===== Tab Slider ===== */
+    .slider li {
+      display: none;
+      transition: all 0.5s ease;
+    }
+
+    .slider li.selected {
+      display: block;
+    }
+
+    /* ===== Active menu link ===== */
+    .menu li a.active {
+      color: #64dd17;
+      font-weight: 800;
+    }
+  </style>
 
 </body>
 
